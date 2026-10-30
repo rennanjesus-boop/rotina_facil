@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotina Fácil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>🌈 Rotina Fácil</h1>
+<p>Organize seu dia de um jeito simples e tranquilo!</p>
+</header>
+
+<main>
+<section class="welcome">
+<h2>Minha rotina de hoje</h2>
+<p>Uma atividade de cada vez. Você consegue!</p>
+</section>
+
+<section class="progress">
+<h3>Meu progresso</h3>
+<div class="progress-bar">
+<div id="progress-fill"></div>
+</div>
+<p id="progress-text">0% concluído</p>
+</section>
+
+<section class="add-task">
+<h3>Adicionar atividade</h3>
+<input id="task-name" placeholder="Nome da atividade">
+<input id="task-time" type="time">
+<button onclick="addTask()">Adicionar</button>
+</section>
+
+<section>
+<h3>Minha lista de atividades</h3>
+<div class="filters">
+<button onclick="filterTasks('all')">Todas</button>
+<button onclick="filterTasks('pending')">Pendentes</button>
+<button onclick="filterTasks('done')">Concluídas</button>
+</div>
+<div id="task-list"></div>
+</section>https://github.com/rennanjesus-boop/rotina_facil/tree/main
+</main>
+
+<footer>
+<p>💙 Cada pequeno passo é uma conquista!</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
